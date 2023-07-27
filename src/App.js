@@ -3,10 +3,10 @@ import AddUser from './components/Users/AddUser';
 import UserList from './components/Users/UserList'
 function App() {
   const [userslist,setuserslist]=useState([]);
-  const AddtoArray=(username,userAge)=>{
+  const AddtoArray=(username,userAge,userClg )=>{
   setuserslist((prevuserslist)=>{
     return [...prevuserslist,
-      {name: username , age:userAge,id:Math.random().toString() },
+      {name: username , age:userAge, clgname: userClg, id:Math.random().toString() },
     ];
   });
   };
