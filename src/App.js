@@ -11,10 +11,10 @@ function App() {
   });
   };
   return (
-    <div>
+    <React.Fragment>
     <AddUser onAddUser={AddtoArray}/>
     <UserList users={userslist}/>
-    </div>
+    </React.Fragment>
   );
 }
 
